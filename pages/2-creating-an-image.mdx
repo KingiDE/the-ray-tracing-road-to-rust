@@ -98,6 +98,10 @@ Opening the output file in an image viewer shows this result:
 
 Hooray! This is the graphics "hello world."
 
+<Callout type="warning">
+  If you're running this command in Powershell on Windows, the '>' operator writes the given input to a file in the UTF-16 format which can break some PPM viewers. To resolve this issue, you can use the cmd which should write in UTF-8.
+</Callout>
+
 <Callout type="info">
   You can try opening the PPM file in your favorite viewer. Google "PPM viewer" if your viewer doesn't support it. If you are on macOS, you can use the built-in Preview app. If you are using Visual Studio Code, you can install an [extension](https://marketplace.visualstudio.com/items?itemName=ngtystr.ppm-pgm-viewer-for-vscode) that supports PPM and view the image within the code editor.
 </Callout>
